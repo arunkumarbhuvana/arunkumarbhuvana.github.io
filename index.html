@@ -205,6 +205,39 @@
   .footer-names { font-family: "Cormorant Garamond", serif; font-size: 2.2rem; color: var(--gold-light); margin-bottom: 0.5rem; }
   footer p { font-size: 0.78rem; margin-top: 0.4rem; letter-spacing: 0.08em; }
   .pets { font-family: "Cormorant Garamond", serif; font-style: italic; color: var(--gold-light); font-size: 1.05rem; margin-top: 1rem; }
+  .story-timeline {
+  max-width: 700px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.story-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.story-dot {
+  width: 12px;
+  height: 12px;
+  background: #c9a96e;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.story-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.story-content p {
+  margin: 5px 0 0;
+  color: #555;
+  line-height: 1.6;
+}
 </style>
 </head>
 <body>
@@ -290,28 +323,80 @@
   </div>
 </div>
 
-<!-- OUR STORY -->
 <div style="background: var(--cream);">
   <div class="section" id="story">
-    <p class="section-label">The Families</p>
+
+    <p class="section-label">Our Journey</p>
     <h2 class="section-title">Our Story</h2>
     <div class="ornament-center">— ✦ —</div>
+
     <p class="story-quote">
-      "Our love is the focus of our special day —<br>
-      come celebrate with us and feel the love."
+      "Two souls, two families, one beautiful beginning ✨"
     </p>
+
     <div class="divider"></div>
+
+    <!-- Timeline -->
+    <div class="story-timeline">
+
+      <div class="story-item">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <h3>💫 The Beginning</h3>
+          <p>
+            It all started with a simple moment that turned into something unforgettable.
+            What began as a conversation slowly grew into a connection neither of us expected.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-item">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <h3>❤️ The Connection</h3>
+          <p>
+            Days turned into conversations, and conversations turned into comfort.
+            Somewhere between laughter and late talks, we found something real.
+          </p>
+        </div>
+      </div>
+
+      <div class="story-item">
+        <div class="story-dot"></div>
+        <div class="story-content">
+          <h3>💍 The Promise</h3>
+          <p>
+            With love growing stronger each day, we decided to walk this journey together —
+            forever, with our families by our side.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Families -->
+    <p class="section-label">The Families</p>
+
     <div class="family-block">
       <div class="family-side">
         <div class="family-name">A. Arun Kumar</div>
-        <div class="family-parents">Son of<br>Mr. A. Ashok &amp; Mrs. A. Artheeswari</div>
+        <div class="family-parents">
+          Son of<br>Mr. A. Ashok &amp; Mrs. A. Artheeswari
+        </div>
       </div>
+
       <div class="family-amp">&amp;</div>
+
       <div class="family-side">
         <div class="family-name">M. Bhuvaneswari</div>
-        <div class="family-parents">Daughter of<br>Mr. P. Muruganantham &amp; Mrs. M. Sakthi</div>
+        <div class="family-parents">
+          Daughter of<br>Mr. P. Muruganantham &amp; Mrs. M. Sakthi
+        </div>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -324,8 +409,7 @@
     <div class="gallery-grid">
 
   <div class="gallery-item"><img src="images/4A6822BA-4B24-431F-A2AE-EA38BFDC4EBD.jpeg" loading="lazy"></div>
-  <div class="gallery-item"><img src="images/74A87C4E-5769-4CA4-AACD-91F4400994D9.jpeg" loading="lazy"></div>
-  <div class="gallery-item"><img src="images/546CAE07-FDF0-4C5E-A32C-65D834BBBCDA.jpeg" loading="lazy"></div>
+
   <div class="gallery-item"><img src="images/DSC03703.JPG" loading="lazy"></div>
   <div class="gallery-item"><img src="images/4424F021-5D16-44FC-AE1C-AF0716C9B814.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC03726.JPG" loading="lazy"></div>
@@ -334,6 +418,7 @@
   <div class="gallery-item"><img src="images/26752319-FE49-4A3D-A8F9-770B98D789CA.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC03867.JPG" loading="lazy"></div>
   <div class="gallery-item"><img src="images/89737968-02E8-4B88-A809-41C0F5EA566A.jpeg" loading="lazy"></div>
+  <div class="gallery-item"><img src="images/546CAE07-FDF0-4C5E-A32C-65D834BBBCDA.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC04044.JPG" loading="lazy"></div>
   <div class="gallery-item"><img src="images/A154B9C0-7B95-49BD-8955-A49598D23E91.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/002D0193-55C8-406D-9DCF-F2D6F6C018E7.jpeg" loading="lazy"></div>
@@ -355,6 +440,7 @@
   <div class="gallery-item"><img src="images/71599DF3-3F12-4742-B6EC-9338B5AE53CC.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC04383.JPG" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC04725.JPG" loading="lazy"></div>
+  <div class="gallery-item"><img src="images/74A87C4E-5769-4CA4-AACD-91F4400994D9.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/AC0F6225-79AB-4800-8CAC-A048A11DA927.jpeg" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC04393.JPG" loading="lazy"></div>
   <div class="gallery-item"><img src="images/DSC04752.JPG" loading="lazy"></div>
