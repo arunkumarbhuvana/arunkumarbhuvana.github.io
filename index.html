@@ -861,6 +861,10 @@
 (function() {
   'use strict';
 
+  // ===== MUSIC ELEMENTS (declared early for autoplay on enter) =====
+  const musicBtn = document.getElementById('music-toggle');
+  const bgMusic = document.getElementById('bg-music');
+
   // ===== ENVELOPE INTERACTION =====
   const envelope = document.getElementById('envelope');
   const intro = document.getElementById('envelope-intro');
@@ -888,6 +892,10 @@
   enterBtn.addEventListener('click', function() {
     intro.classList.add('hidden');
     document.body.style.overflow = '';
+    // Autoplay background music on entry (user gesture satisfies browser policy)
+    bgMusic.play().then(function() {
+      musicBtn.classList.add('playing');
+    }).catch(function() {});
     // Trigger hero background zoom
     setTimeout(function() {
       document.getElementById('hero-bg').classList.add('loaded');
@@ -1088,8 +1096,6 @@
   });
 
   // ===== MUSIC TOGGLE =====
-  const musicBtn = document.getElementById('music-toggle');
-  const bgMusic = document.getElementById('bg-music');
   musicBtn.addEventListener('click', function() {
     if (bgMusic.paused) {
       bgMusic.play();
